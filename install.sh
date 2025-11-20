@@ -26,6 +26,7 @@ echo "📥 Installing dependencies..."
 # Activate venv for the install command or use uv pip directly
 source .venv/bin/activate
 uv pip install -e ".[dev]"
+source ~/.bashrc
 
 echo "✨ Done! Activate your environment with:"
 echo "   source .venv/bin/activate"
