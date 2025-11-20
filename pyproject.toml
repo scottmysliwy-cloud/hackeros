@@ -1,0 +1,20 @@
+[project]
+name = "omarchy"
+version = "0.1.0"
+description = "Omarchy CLI tools"
+authors = [
+    {name = "Scott", email = "scott@example.com"},
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+omarchy = "omarchy.cli:app"
+
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
