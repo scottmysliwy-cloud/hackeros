@@ -3,7 +3,7 @@ import time
 import os
 import signal
 from datetime import datetime, timedelta
-from hackersos.utils import notify, get_cache_dir
+from hackeros.utils import notify, get_cache_dir
 
 app = typer.Typer(help="Pomodoro Timer")
 

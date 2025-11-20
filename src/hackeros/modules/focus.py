@@ -1,6 +1,6 @@
 import typer
 import subprocess
-from hackersos.utils import notify, run_command, get_cache_dir, command_exists
+from hackeros.utils import notify, run_command, get_cache_dir, command_exists
 
 app = typer.Typer(help="Manage Focus Mode")
 

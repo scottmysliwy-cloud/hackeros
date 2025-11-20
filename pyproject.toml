@@ -1,7 +1,7 @@
 [project]
-name = "omarchy"
+name = "hackeros"
 version = "0.1.0"
-description = "Omarchy CLI tools"
+description = "Hackeros CLI tools"
 authors = [
     {name = "Scott", email = "scott@example.com"},
 ]
@@ -10,11 +10,28 @@ dependencies = [
     "rich>=13.0.0",
     "pydantic>=2.0.0",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "types-setuptools",
+]
 
 [project.scripts]
-omarchy = "omarchy.cli:app"
+hackeros = "hackeros.cli:app"
 
 [build-system]
 requires = ["flit_core>=3.2,<4"]
 build-backend = "flit_core.buildapi"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"

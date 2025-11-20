@@ -1,6 +1,6 @@
 import typer
 from datetime import datetime
-from hackersos.utils import notify, run_command, get_documents_dir
+from hackeros.utils import notify, run_command, get_documents_dir
 
 app = typer.Typer(help="Quick Capture")
 

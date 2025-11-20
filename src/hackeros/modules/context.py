@@ -1,7 +1,7 @@
 import typer
 import json
 import subprocess
-from hackersos.utils import notify, run_command, get_cache_dir
+from hackeros.utils import notify, run_command, get_cache_dir
 
 app = typer.Typer(help="Context Management")
 

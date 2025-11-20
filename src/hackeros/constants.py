@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Paths
 PACMAN_CONF = Path("/etc/pacman.conf")
-PROJECT_ROOT = Path(__file__).parents[2] # src/hackersos/constants.py -> src/hackersos -> src -> root
+PROJECT_ROOT = Path(__file__).parents[2] # src/hackeros/constants.py -> src/hackeros -> src -> root
 PACKAGES_FILE = PROJECT_ROOT / "packages"
 DOTFILES_SRC = PROJECT_ROOT / "config"
 DOTFILES_DST = Path.home() / ".config"

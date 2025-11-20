@@ -8,8 +8,8 @@ app = typer.Typer(
 )
 console = Console()
 
-from hackersos.modules import packages, theme, setup, webapp
-from hackersos.modules import focus, capture, context, pomodoro, install, network, bluetooth, keybindings, settings
+from hackeros.modules import packages, theme, setup, webapp
+from hackeros.modules import focus, capture, context, pomodoro, install, network, bluetooth, keybindings, settings
 
 app.add_typer(focus.app, name="focus")
 app.add_typer(capture.app, name="capture")
@@ -29,7 +29,7 @@ app.add_typer(webapp.app, name="webapp")
 @app.callback()
 def main():
     """
-    Omarchy CLI tools for managing your system.
+    HackerOS CLI tools for managing your system.
     """
     pass
 

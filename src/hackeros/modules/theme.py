@@ -6,8 +6,8 @@ import subprocess
 import os
 from pathlib import Path
 from typing import List, Optional
-from hackersos.utils import run_command, notify, console, logger
-from hackersos.constants import THEME_DIR, VSCODE_SETTINGS, ALACRITTY_CONFIG, OBSIDIAN_VAULTS_FILE
+from hackeros.utils import run_command, notify, console, logger
+from hackeros.constants import THEME_DIR, VSCODE_SETTINGS, ALACRITTY_CONFIG, OBSIDIAN_VAULTS_FILE
 
 app = typer.Typer(help="Theme Manager")
 

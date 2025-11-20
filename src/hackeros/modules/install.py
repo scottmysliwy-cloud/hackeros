@@ -1,8 +1,8 @@
 import typer
 from pathlib import Path
-from hackersos.utils import run_command, notify, require_non_root, logger
-from hackersos.constants import PACKAGES_FILE, DOTFILES_SRC, DOTFILES_DST
-from hackersos.modules.install_executors import (
+from hackeros.utils import run_command, notify, require_non_root, logger
+from hackeros.constants import PACKAGES_FILE, DOTFILES_SRC, DOTFILES_DST
+from hackeros.modules.install_executors import (
     RepoPlan, RepoExecutor,
     YayPlan, YayExecutor,
     PackageExecutor,

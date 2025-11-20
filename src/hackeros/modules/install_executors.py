@@ -5,8 +5,8 @@ import tempfile
 from pathlib import Path
 from typing import List
 from dataclasses import dataclass
-from hackersos.utils import run_command, notify, command_exists, console, ensure_line_in_file, logger
-from hackersos.constants import (
+from hackeros.utils import run_command, notify, command_exists, console, ensure_line_in_file, logger
+from hackeros.constants import (
     PACMAN_CONF, REQUIRED_REPOS, OPTIONAL_REPOS,
     BASE_DEVEL, NVIDIA_PACKAGES, INTEL_MEDIA_DRIVER, INTEL_VA_DRIVER, APPLE_T2_PACKAGES,
     NETWORK_SERVICES, PRINTER_SERVICES, NVIDIA_ENV_VARS,

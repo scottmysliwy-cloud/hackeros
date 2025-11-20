@@ -1,6 +1,6 @@
 import typer
 import subprocess
-from hackersos.utils import command_exists, notify
+from hackeros.utils import command_exists, notify
 
 app = typer.Typer(help="Bluetooth Management")
 
@@ -16,6 +16,6 @@ def main(ctx: typer.Context):
         # bluetoothctl is interactive but not a full TUI in the same sense, but better than nothing
         subprocess.run(["bluetoothctl"])
     else:
-        from hackersos.utils import logger
+        from hackeros.utils import logger
         logger.error("bluetuith or bluetoothctl not found.")
         notify("Bluetooth Error", "No bluetooth tool found.", urgency="critical")

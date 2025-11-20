@@ -1,6 +1,6 @@
 import typer
 import subprocess
-from hackersos.utils import command_exists, notify
+from hackeros.utils import command_exists, notify
 
 app = typer.Typer(help="Network Management")
 
@@ -13,6 +13,6 @@ def main(ctx: typer.Context):
     if command_exists("nmtui"):
         subprocess.run(["nmtui"])
     else:
-        from hackersos.utils import logger
+        from hackeros.utils import logger
         logger.error("nmtui not found. Please install NetworkManager-tui.")
         notify("Network Error", "nmtui not found.", urgency="critical")

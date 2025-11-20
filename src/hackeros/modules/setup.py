@@ -3,8 +3,8 @@ import subprocess
 import shutil
 from pathlib import Path
 from rich.prompt import Prompt
-from hackersos.utils import run_command, notify, console, logger
-from hackersos.constants import RESOLVED_CONF, PAM_SUDO, PAM_POLKIT
+from hackeros.utils import run_command, notify, console, logger
+from hackeros.constants import RESOLVED_CONF, PAM_SUDO, PAM_POLKIT
 
 app = typer.Typer(help="Setup Wizards")
 
