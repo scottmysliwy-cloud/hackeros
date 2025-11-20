@@ -28,5 +28,12 @@ source .venv/bin/activate
 uv pip install -e ".[dev]"
 source ~/.bashrc
 
+pacman -S openssh which
+systemctl enable sshd
+systemctl start sshd
+
+
+
+
 echo "✨ Done! Activate your environment with:"
 echo "   source .venv/bin/activate"
