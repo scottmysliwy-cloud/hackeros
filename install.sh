@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+USER="scott"
+
+
+
 echo "🚀 Bootstrapping Hackeros..."
 
 # 1. Install uv if not present
@@ -28,12 +32,14 @@ source .venv/bin/activate
 uv pip install -e ".[dev]"
 source ~/.bashrc
 
-pacman -S openssh which
+pacman -S --noconfirm openssh which
 systemctl enable sshd
 systemctl start sshd
 
+# create user with wheel group
+useradd -m -G wheel -s /bin/bash $USER
 
-
+passwd $USER
 
 echo "✨ Done! Activate your environment with:"
 echo "   source .venv/bin/activate"
